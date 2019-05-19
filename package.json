@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "ssh-keygen -b 2048 -t rsa -P '' -f key"
+    "postinstall": "ssh-keygen -b 2048 -t rsa -P '' -f key",
+    "start" : "forever start -o output.log index.js",
+    "stop" : "forever stop index.js"
   },
   "author": "",
   "license": "ISC",

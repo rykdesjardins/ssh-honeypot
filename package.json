@@ -1,0 +1,16 @@
+{
+  "name": "honeypot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "ssh-keygen -b 2048 -t rsa -P '' -f key"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^1.0.0",
+    "request": "^2.88.0",
+    "ssh2": "^0.8.4"
+  }
+}
